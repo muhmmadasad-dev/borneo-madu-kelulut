@@ -9,15 +9,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">  <style>
+    .brand-logo {
+      display: block;
+      width: 190px;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    .brand {
+      align-items: center;
+    }
+    @media (max-width: 700px) {
+      .brand-logo {
+        width: 125px;
+      }
+    }
+  </style>
+
 </head>
 <body>
   <div class="announcement">Melayani pemesanan area Sangatta dan sekitarnya</div>
 
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Borneo Madu Kelulut - Beranda">
-      <span class="brand-mark">B<span>✳</span></span>
-      <span class="brand-copy"><strong>BORNEO</strong><small>MADU KELULUT</small></span>
+      <img class="brand-logo" src="Foto/logo-borneo.png" alt="Borneo Madu Kelulut">
     </a>
     <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Navigasi utama">
@@ -33,7 +49,7 @@
     <section class="hero" id="home">
       <div class="hero-content">
         <p class="eyebrow light">DARI ALAM BORNEO</p>
-        <h1>Mengenal Kebaikan Alam dalam Setiap Tetes Madu.</h1>
+        <h1>Mengenal Kebaikan Alam dalam Setiap Tetes Madu</h1>
         <p class="hero-desc">Cerita tentang lebah kelulut, kebun, dan madu khas Kalimantan. Kenali produk kami dan pesan dengan mudah melalui WhatsApp.</p>
         <div class="hero-actions">
           <a class="button button-gold" data-wa="Halo Borneo Madu Kelulut, saya ingin bertanya tentang produk madu kelulut.">Pesan via WhatsApp <span class="button-arrow" aria-hidden="true">→</span></a>
@@ -142,16 +158,16 @@
           <div class="product-image photo-placeholder">
   <img src="Foto/foto-produk-100ml.png"
        alt="Madu Kelulut 100 ml">
-  <span class="product-tag">PRAKTIS</span>
+  <span class="product-tag">100 ml</span>
 </div>
-          <div class="product-info"><div><h3>Madu Kelulut</h3><p class="volume">100 ml</p></div><strong class="price">Rp60.000</strong></div>
+          <div class="product-info"><div><h3>Madu Kelulut</h3><p class="volume">100 ml</p></div><strong class="price">Rp55.000</strong></div>
           <a class="button button-dark full-button" data-wa="Halo Borneo Madu Kelulut, saya ingin memesan Madu Kelulut 100 ml seharga Rp60.000.">Pesan ukuran 100 ml <span class="button-arrow" aria-hidden="true">→</span></a>
         </article>
         <article class="product-card featured">
           <div class="product-image photo-placeholder">
   <img src="Foto/foto-produk-250ml.png"
        alt="Madu Kelulut 250 ml">
-  <span class="product-tag">250 ML</span>
+  <span class="product-tag">250 ml</span>
 </div>
           <div class="product-info"><div><h3>Madu Kelulut</h3><p class="volume">250 ml</p></div><strong class="price">Rp110.000</strong></div>
           <a class="button button-dark full-button" data-wa="Halo Borneo Madu Kelulut, saya ingin memesan Madu Kelulut 250 ml seharga Rp110.000.">Pesan ukuran 250 ml <span class="button-arrow" aria-hidden="true">→</span></a>
@@ -214,7 +230,7 @@
   </main>
 
   <footer class="footer">
-    <a class="brand footer-brand" href="#home"><span class="brand-mark">B<span>✳</span></span><span class="brand-copy"><strong>BORNEO</strong><small>MADU KELULUT</small></span></a>
+    <a class="brand footer-brand" href="#home" aria-label="Borneo Madu Kelulut - Kembali ke atas"><img class="brand-logo" src="Foto/logo-borneo.png" alt="Borneo Madu Kelulut"></a>
     <p>Mengenal madu kelulut dari alam Borneo.</p>
     <div class="footer-bottom"><span>© <span id="year"></span> Borneo Madu Kelulut</span><a href="#home">Kembali ke atas ↑</a></div>
   </footer>
