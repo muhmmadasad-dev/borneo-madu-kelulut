@@ -364,3 +364,7 @@ h2 { font-size: clamp(34px, 4vw, 49px); color: var(--forest); margin-bottom: 20p
     font-size: 11px;
   }
 }
+/* Mengatur posisi foto galeri paling kiri */
+.gallery-grid .gallery-large img {
+  object-position: center 100%;
+}
